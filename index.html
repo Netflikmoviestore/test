@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD><TITLE>THIS IS OUR TEST</TITLE></HEAD>
+        <BODY>
+           <HEADER>
+            <H1 align="center"><DIV STYLE="background-color: rgb(13, 13, 157); COLOR:WHITE">WELCOME TO MOVIE STORE </DIV></H1>
+        <A HREF=" " >Home   </A>
+        <A HREF=" ">Movies</A>
+        <A HREF=" ">Games</A>
+        <A HREF=" ">Trendings</A>   
+        <hr>
+
+
+        <body>
+          <input type="text" id="searchInput" placeholder="Search...">
+          <button onclick="search()">Search</button>
+        
+          <script>
+            function search() {
+              var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+              var matchingPages = pages.filter(function(page) {
+                return page.title.toLowerCase().includes(searchTerm);
+              });
+        
+              if (matchingPages.length > 0) {
+                var firstMatchingPage = matchingPages[0];
+                window.location.href = firstMatchingPage.url;
+              } else {
+                alert("No matching pages found.");
+              }
+            }
+          </script>
+        </body>
+        
+
+
+        </HEADER>
+        <main> <BR>
+            <BR>
+             
+              <style>
+                .image-container {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: flex-start;
+                  align-items: center;
+                  gap: 20px;
+                }
+              
+            
+              
+                .download-button {
+                  margin-top: 10px;
+                }
+              </style>
+              
+              <div class="image-container">
+                <div>
+                  <img src="leo.jpg" alt="Description of image 1" width="250" height="250">
+                  <button class="download-button">Download</button>
+                </div>
+                <div>
+                  <img src="leo.jpg" alt="Description of image 2" width="250" height="250">
+                  <button class="download-button">Download</button>
+                </div>
+                <div>
+                  <img src="leo.jpg" alt="Description of image 3" width="250" height="250">
+                  <button class="download-button">Download</button>
+                </div>
+          
+                 <div>
+                  <img src="leo.jpg" alt="Description of image 1" width="250" height="250">
+                  <button class="download-button">Download</button>
+                </div>
+                <div>
+                  <img src="leo.jpg" alt="Description of image 2" width="250" height="250">
+                  <button class="download-button">Download</button>
+                </div>
+                <div>
+                  <img src="leo.jpg" alt="Description of image 3" width="250" height="250">
+                  <button class="download-button">Download</button>
+                </div>
+                
+              </div>
+              
+              
+              
+                
+                
+ <h4>Check Out New Mvies</h4> 
+        </main>
+<footer align="center" style="background-color: rgba(195, 185, 185, 0.787); color:black">
+<hr>
+Author:Son san<br>
+&copy;copyright reserved<br>
+<small><a href=" ......">moviestore@gmail.com</a></small>
+</footer>
+    </BODY>
+
+        </BODY>
+
+    </HEAD>
+</HTML>
